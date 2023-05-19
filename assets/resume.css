@@ -1,0 +1,81 @@
+.profile {
+    width: 300px;
+    height: 300px;
+}
+
+.navbar, .navbar * {
+    background-color: #ffffff;
+}
+.navbar {
+    border: 1px solid #000000;
+}
+
+#sections, .list-group-item, .list-group-item:focus {
+    background-color: #efe3ca;
+    border-radius: 0;
+  }
+
+ .list-group-item:hover{
+   background-color: #D7C0AE;
+ }
+
+.list-group-item{
+  border-color: transparent;
+  border-bottom-color: #d7c0ae;
+}
+
+/* reduce the top padding of the first section to avoid extra space */
+/* section:not(section section):first-child {
+    padding-top: 50px;
+  } */
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section:not(section section):nth-of-type(even) {
+    background-color: #d6dbde;
+}
+
+
+section ul ::marker {
+    content: ">  ";
+    color: #043f83;
+}
+section ul ul ::marker {
+    content: ">>  ";
+}
+
+section li > p {
+    position: relative;
+    border-bottom: 1px solid #48b2;
+    cursor: default;
+    transition: color 0.4s;
+    margin-bottom: 7px;
+}
+
+.list-group-item-action.active{
+    background-color: #967E76;
+    border-color: #967E76;
+    color: white;
+}
+/*
+.list-group-item-action:hover{
+    background-color: #ffffff;
+    color: #000000;
+} */
+
+
+section h2 {
+    text-align: left;
+    color:#222; font-size:25px; font-weight:400;
+    /* text-transform: uppercase; */
+    word-spacing: 1px; letter-spacing:1px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.bi {
+    margin: 0px 10px 0px 10px;
+}
