@@ -20,7 +20,7 @@ def sidebar() -> pc.Component:
         pc.vstack(*sidebar_links, style={"align_items": "flex_start", "width": "100%"}),
         style={
             "w": style_config["sidebar_width"],
-            "h": "calc(100vh - 64px)",
+            "h": f"calc(100vh - {style_config['header_height']})",
             "m": "0px !important",
             # "position": "absolute",
             # "top": "0px",

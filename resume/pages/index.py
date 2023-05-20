@@ -56,6 +56,4 @@ def index() -> pc.Component:
                 "position": "relative",
             },
         ),
-        style={"spacing": 0,
-               "width": "100vw"}
     )

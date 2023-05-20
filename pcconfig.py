@@ -16,4 +16,5 @@ config = ResumeConfig(
 
 style_config = {
     "sidebar_width": "20vw",
+    "header_height": "60px"
 }

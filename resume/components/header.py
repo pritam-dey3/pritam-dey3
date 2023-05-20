@@ -1,5 +1,6 @@
 import pynecone as pc
 from resume.state import nav_content, State
+from pcconfig import style_config
 
 nav_links = [pc.link(name, href=f"/#{name}") for name in nav_content]
 
@@ -23,7 +24,7 @@ def header() -> pc.Component:
         ),
         style={
             "width": "100%",
-            "height": "60px",
+            "height": style_config["header_height"],
             "border_bottom": "1px solid",
         },
     )
