@@ -12,3 +12,8 @@ config = ResumeConfig(
         "@mantine/hooks"
     ]
 )
+
+
+style_config = {
+    "sidebar_width": "20vw",
+}

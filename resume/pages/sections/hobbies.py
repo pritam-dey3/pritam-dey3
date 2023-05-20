@@ -3,6 +3,7 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
+        pc.heading(pc.text("""Extra Curricular Activities"""), size="2xl"),
         pc.list(
             pc.list_item(
                 pc.text(

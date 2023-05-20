@@ -1,9 +1,9 @@
 import pynecone as pc
-from resume.state import nav_content, sidebar_content
+from resume.state import nav_content, all_meta
 from resume.state import State
 from typing import Set
 
-sidebar_links = [pc.link(name, href=f"/#{name}") for name in sidebar_content]
+sidebar_links = [pc.link(meta["title"], href=f"/#{meta['slug']}") for meta in all_meta]
 nav_links = [pc.link(name, href=f"/#{name}") for name in nav_content]
 
 
@@ -61,8 +61,6 @@ def drawer() -> pc.Component:
     return pc.box(
         collapse(drawer_content(),
         in_=State.drawer_is_open,
-        on_click=State.toggle_drawer,
-        on_blur=State.toggle_drawer,
         animate_opacity=False,
         transition_duration=1000,
         style={"height": "calc(80vh - 60px)"}

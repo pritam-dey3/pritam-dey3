@@ -20,8 +20,8 @@
  }
 
 .list-group-item{
-  border-color: transparent;
-  border-bottom-color: #d7c0ae;
+    border: 1px solid;
+    border-color: #d7c0ae;
 }
 
 /* reduce the top padding of the first section to avoid extra space */
