@@ -31,14 +31,13 @@ def get_sections():
 
 
 def body() -> pc.Component:
-    return pc.box(
+    return pc.vstack(
         *[f() for f, md in get_sections()],
         style={
             "overflowY": "auto",
-            "m": "15px 0px !important",
-            "height": "calc(100vh - 60px - 15px - 15px)",
-            "width": f"calc(100vw - {style_config['sidebar_width']})",
-            "px": "21px",
+            "m": "15px 21px !important",
+            "height": f"calc(100vh - {style_config['header_height']} - 15px - 15px)",
+            "width": f"calc(100vw - {style_config['sidebar_width']} - 42px)",
         },
     )
 

@@ -3,7 +3,7 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
-        pc.heading(pc.text("""Technical Skills"""), size="2xl"),
+        pc.heading(pc.text("""Technical Skills"""), class_name="xxl"),
         pc.list(
             pc.list_item(
                 pc.text("""Statistical Modelling and Inference"""),
@@ -36,7 +36,7 @@ def section() -> pc.Component:
                 pc.text("""Database Management: SQL"""),
             ),
         ),
-        pc.heading(pc.text("""Interests"""), size="2xl"),
+        pc.heading(pc.text("""Interests"""), class_name="xxl"),
         pc.list(
             pc.list_item(
                 pc.text(
@@ -62,4 +62,6 @@ def section() -> pc.Component:
                 ),
             ),
         ),
+        class_name="section",
+        align_items="flex-start",
     )

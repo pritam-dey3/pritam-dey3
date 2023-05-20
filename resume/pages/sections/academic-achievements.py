@@ -3,7 +3,7 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
-        pc.heading(pc.text("""Academic Achievements"""), size="2xl"),
+        pc.heading(pc.text("""Academic Achievements"""), class_name="xxl"),
         pc.text(
             """During my academic career, I have achieved several notable accomplishments. Some of them are:"""
         ),
@@ -28,4 +28,6 @@ def section() -> pc.Component:
         pc.text(
             """These achievements have been the result of my hard work, dedication, and passion for learning."""
         ),
+        class_name="section",
+        align_items="flex-start",
     )

@@ -16,7 +16,9 @@ class PyneconeMarkdown(MarkdownRenderer):
 
     def __call__(self, tokens, state: BlockState):
         body = self.render_tokens(tokens, state)
-        body = self.output_tmpl.format(children=body, props="")
+        body = self.output_tmpl.format(
+            children=body, props="class_name='section', align_items='flex-start'"
+        )
         return black.format_str(body, mode=black.FileMode())
 
     def text(self, token: dict[str, Any], state: BlockState) -> str:
@@ -40,9 +42,9 @@ class PyneconeMarkdown(MarkdownRenderer):
 
     def heading(self, token: Dict[str, Any], state: BlockState) -> str:
         level = token["attrs"]["level"]
-        size = {1: "2xl", 2: "xl", 3: "lg", 4: "md", 5: "sm"}[level]
+        size = {1: "xxl", 2: "xl", 3: "lg", 4: "md", 5: "sm"}[level]
         return self.heading_tmpl.format(
-            children=self.render_children(token, state), props=f"size='{size}'"
+            children=self.render_children(token, state), props=f"class_name='{size}'"
         )
 
     def list(self, token: Dict[str, Any], state: BlockState) -> str:

@@ -3,23 +3,18 @@
     height: 300px;
 }
 
-.navbar, .navbar * {
-    background-color: #ffffff;
-}
-.navbar {
-    border: 1px solid #000000;
-}
-
-#sections, .list-group-item, .list-group-item:focus {
+#sections,
+.list-group-item,
+.list-group-item:focus {
     background-color: #efe3ca;
     border-radius: 0;
-  }
+}
 
- .list-group-item:hover{
-   background-color: #D7C0AE;
- }
+.list-group-item:hover {
+    background-color: #D7C0AE;
+}
 
-.list-group-item{
+.list-group-item {
     border: 1px solid;
     border-color: #d7c0ae;
 }
@@ -29,25 +24,25 @@
     padding-top: 50px;
   } */
 
-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.section {
+    padding: 21px;
 }
 
-section:not(section section):nth-of-type(even) {
+.section:not(section section):nth-of-type(even) {
     background-color: #d6dbde;
 }
 
 
-section ul ::marker {
+.section ul ::marker {
     content: ">  ";
     color: #043f83;
 }
-section ul ul ::marker {
+
+.section ul ul ::marker {
     content: ">>  ";
 }
 
-section li > p {
+.section li>p {
     position: relative;
     border-bottom: 1px solid #48b2;
     cursor: default;
@@ -55,23 +50,28 @@ section li > p {
     margin-bottom: 7px;
 }
 
-.list-group-item-action.active{
+.list-group-item-action.active {
     background-color: #967E76;
     border-color: #967E76;
     color: white;
 }
-/*
-.list-group-item-action:hover{
-    background-color: #ffffff;
-    color: #000000;
-} */
 
 
-section h2 {
+.section .xxl {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+.section .xl {
     text-align: left;
-    color:#222; font-size:25px; font-weight:400;
+    color: #222;
+    font-size: 25px;
+    font-weight: 400;
     /* text-transform: uppercase; */
-    word-spacing: 1px; letter-spacing:1px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
     text-decoration: underline;
     text-underline-offset: 4px;
 }

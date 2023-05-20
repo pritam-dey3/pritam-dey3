@@ -3,7 +3,7 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
-        pc.heading(pc.text("""Extra Curricular Activities"""), size="2xl"),
+        pc.heading(pc.text("""Extra Curricular Activities"""), class_name="xxl"),
         pc.list(
             pc.list_item(
                 pc.text(
@@ -19,4 +19,6 @@ def section() -> pc.Component:
                 pc.text("""Sports - Badminton, Table tennis, Chess"""),
             ),
         ),
+        class_name="section",
+        align_items="flex-start",
     )

@@ -3,13 +3,13 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
-        pc.heading(pc.text("""Experience"""), size="2xl"),
+        pc.heading(pc.text("""Experience"""), class_name="xxl"),
         pc.text(
             """During my professional career, I have gained experience working on various projects. Some of my notable experiences are:"""
         ),
         pc.heading(
             pc.text("""Data Scientist at Dr. Reddy's Laboratory (Aug-2021)"""),
-            size="xl",
+            class_name="xl",
         ),
         pc.list(
             pc.list_item(
@@ -51,4 +51,6 @@ def section() -> pc.Component:
         pc.text(
             """These experiences have provided me with valuable insights into the workings of the industry and helped me develop my skills as a data scientist."""
         ),
+        class_name="section",
+        align_items="flex-start",
     )

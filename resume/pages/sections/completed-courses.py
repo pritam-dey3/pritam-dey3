@@ -3,7 +3,7 @@ import pynecone as pc
 
 def section() -> pc.Component:
     return pc.vstack(
-        pc.heading(pc.text("""Completed Courses"""), size="2xl"),
+        pc.heading(pc.text("""Completed Courses"""), class_name="xxl"),
         pc.text(
             """Throughout my academic and professional journey, I have completed several courses to enhance my knowledge and skills. Some of the courses that I have completed are:"""
         ),
@@ -27,4 +27,6 @@ def section() -> pc.Component:
                 ),
             ),
         ),
+        class_name="section",
+        align_items="flex-start",
     )
