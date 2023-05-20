@@ -3,7 +3,7 @@ from resume.contents.renderer import PyneconeMarkdown
 from mistune import create_markdown
 import black
 from pathlib import Path
-from glob import glob
+import json
 
 
 root_folder = Path("resume/")
@@ -12,20 +12,31 @@ target_folder = root_folder / "pages" / "sections"
 markdown = create_markdown(renderer=PyneconeMarkdown())
 
 
-def transform_file(file: Path) -> str:
+def transform_file(file: Path) -> tuple[str, dict[str, str]]:
     doc = Document(file, markdown)
     body = black.format_str(doc.body, mode=black.FileMode())
-    return body
+    return body, doc.metadata
 
 
 def compile() -> None:
+    all_meta = []
     for file in sections_folder.glob("*.md"):
         try:
-            code = transform_file(file)
-            with open(target_folder / (file.stem + ".py"), "w+") as f:
+            code, metadata = transform_file(file)
+
+            # add module path to metadata
+            target_filename = target_folder / (file.stem + ".py")
+            metadata["module_path"] = str(target_filename.resolve())
+            all_meta.append(metadata)
+
+            # write code at the target folder
+            with open(target_filename, "w+") as f:
                 f.write(code)
 
             print(f"{file.name} is transformed.")
 
-        except black.InvalidInput as e:
+        except black.InvalidInput:
             print(f"error parsing {file.name}.")
+
+    with open(target_folder / "metadata.json", "w+") as f:
+        json.dump(all_meta, f)

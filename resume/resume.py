@@ -6,6 +6,11 @@ from resume.state import State
 import pynecone as pc
 
 # Add state and page to the app.
-app = pc.App(state=State)
+app = pc.App(
+    state=State,
+    stylesheets=[
+        "styles.css",  # This path is relative to assets/
+    ],
+)
 app.add_page(index)
 app.compile()

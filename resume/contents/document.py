@@ -36,7 +36,7 @@ class Document:
         return
 
     def add_metadata(self):
-        self.metadata["path"] = self.path
+        self.metadata["path"] = str(self.path)
 
     def process(self):
         self.load()

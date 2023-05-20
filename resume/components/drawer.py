@@ -16,8 +16,7 @@ class Collapse(pc.Component):
     animate_opacity: pc.Var[bool]  # type: ignore
     transition_duration: pc.Var[int]  # type: ignore
 
-    @classmethod
-    def get_triggers(cls) -> Set[str]:
+    def get_triggers(self) -> Set[str]:
         """Get the event triggers for the component.
 
         Returns:

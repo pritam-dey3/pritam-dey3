@@ -1,7 +1,7 @@
 import pynecone as pc
 from resume.state import sidebar_content
 
-sidebar_links = [pc.link(name, href=f"/#{name}") for name in sidebar_content]
+sidebar_links = [pc.link(name, href=f"/#{name}", class_name="list-group-item") for name in sidebar_content]
 
 def sidebar() -> pc.Component:
     return pc.box(
