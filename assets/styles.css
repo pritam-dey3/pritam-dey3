@@ -33,21 +33,22 @@
 }
 
 
-.section ul ::marker {
+.section ul > ::before {
     content: ">  ";
     color: #043f83;
 }
 
-.section ul ul ::marker {
+.section ul ul > ::before {
     content: ">>  ";
 }
 
-.section li>p {
+.section li > p {
     position: relative;
     border-bottom: 1px solid #48b2;
     cursor: default;
     transition: color 0.4s;
     margin-bottom: 7px;
+    display: inline;
 }
 
 .list-group-item-action.active {
