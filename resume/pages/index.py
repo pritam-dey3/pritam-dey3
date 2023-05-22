@@ -2,6 +2,7 @@ import pynecone as pc
 from resume.components.header import header
 from resume.components.sidebar import sidebar
 from resume.components.drawer import drawer
+from resume.pages.sections.cover import section as cover
 import importlib
 import re
 from resume.state import all_meta
@@ -32,6 +33,7 @@ def get_sections():
 
 def body() -> pc.Component:
     return pc.vstack(
+        cover(),
         *[f() for f, md in get_sections()],
         style={
             "overflowY": "auto",
