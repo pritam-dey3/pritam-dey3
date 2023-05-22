@@ -41,6 +41,7 @@ def body() -> pc.Component:
             "height": f"calc(100vh - {style_config['header_height']} - 15px - 15px)",
             "width": f"calc(100vw - {style_config['sidebar_width']} - 42px)",
         },
+        align_items="flex-start",
     )
 
 

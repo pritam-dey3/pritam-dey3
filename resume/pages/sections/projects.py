@@ -18,6 +18,7 @@ def section() -> pc.Component:
                 pc.text("""GitHub"""),
                 href="https://github.com/pritam-dey3/VisionDuo",
             ),
+            align_items="flex-start",
         ),
         pc.heading(
             pc.text(
@@ -25,12 +26,15 @@ def section() -> pc.Component:
             ),
             class_name="xl",
         ),
-        pc.text(
-            """Key points: Applying various machine learning tools like decision tree, random forests, extreme boosted trees, support vector machine, KNN and finally creating an ensemble model with all the classifiers."""
-        ),
-        pc.link(
-            pc.text("""GitHub"""),
-            href="https://github.com/pritam-dey3/Titanic-Passenger-Survival-Prediction",
+        pc.vstack(
+            pc.text(
+                """Key points: Applying various machine learning tools like decision tree, random forests, extreme boosted trees, support vector machine, KNN and finally creating an ensemble model with all the classifiers. """
+            ),
+            pc.link(
+                pc.text("""GitHub"""),
+                href="https://github.com/pritam-dey3/Titanic-Passenger-Survival-Prediction",
+            ),
+            align_items="flex-start",
         ),
         pc.heading(
             pc.text(
@@ -39,12 +43,15 @@ def section() -> pc.Component:
             class_name="xl",
         ),
         pc.text("""Advisor: Prof. Swagata Nandi"""),
-        pc.text(
-            """Key points: Validation of basic parametric assumptions and transforming data to assure normality. Detection and Rejection of outliers. Basic linear regression and inference."""
-        ),
-        pc.link(
-            pc.text("""GitHub"""),
-            href="https://github.com/pritam-dey3/Project-On-Regression",
+        pc.vstack(
+            pc.text(
+                """Key points: Validation of basic parametric assumptions and transforming data to assure normality. Detection and Rejection of outliers. Basic linear regression and inference. """
+            ),
+            pc.link(
+                pc.text("""GitHub"""),
+                href="https://github.com/pritam-dey3/Project-On-Regression",
+            ),
+            align_items="flex-start",
         ),
         pc.heading(
             pc.text(
@@ -53,12 +60,15 @@ def section() -> pc.Component:
             class_name="xl",
         ),
         pc.text("""Advisor: Prof. Deepayan Sarkar"""),
-        pc.text(
-            """Key points: Analysing sorting algorithms and their comparison, writing C++ code and using them in R for faster runtime. Comparison of Shell Sort with best gap sequence with Quick Sort."""
-        ),
-        pc.link(
-            pc.text("""GitHub"""),
-            href="https://github.com/pritam-dey3/Shell-Sort",
+        pc.vstack(
+            pc.text(
+                """Key points: Analysing sorting algorithms and their comparison, writing C++ code and using them in R for faster runtime. Comparison of Shell Sort with best gap sequence with Quick Sort. """
+            ),
+            pc.link(
+                pc.text("""GitHub"""),
+                href="https://github.com/pritam-dey3/Shell-Sort",
+            ),
+            align_items="flex-start",
         ),
         pc.heading(
             pc.text(
@@ -67,12 +77,15 @@ def section() -> pc.Component:
             class_name="xl",
         ),
         pc.text("""Advisor: Prof. Isha Dewan"""),
-        pc.text(
-            """Key points: Analysing various non-parametric tests of scale parameter of different distribution through simulation."""
-        ),
-        pc.link(
-            pc.text("""GitHub"""),
-            href="https://github.com/pritam-dey3/nonparametric_project",
+        pc.vstack(
+            pc.text(
+                """Key points: Analysing various non-parametric tests of scale parameter of different distribution through simulation. """
+            ),
+            pc.link(
+                pc.text("""GitHub"""),
+                href="https://github.com/pritam-dey3/nonparametric_project",
+            ),
+            align_items="flex-start",
         ),
         pc.heading(
             pc.text("""Analysis of Egyptian skull data: (March - May 2020)"""),
@@ -84,12 +97,15 @@ def section() -> pc.Component:
         ),
         pc.heading(pc.text("""E2E NLG challenge (Jan - May 2021)"""), class_name="xl"),
         pc.text("""Advisor: Prof. Utpal Garain"""),
-        pc.text(
-            """Key points: Building a transformer model from scratch to convert structured data about restaurants into text."""
-        ),
-        pc.link(
-            pc.text("""GitHub"""),
-            href="https://github.com/pritam-dey3/e2e_nlg_tf",
+        pc.vstack(
+            pc.text(
+                """Key points: Building a transformer model from scratch to convert structured data about restaurants into text. """
+            ),
+            pc.link(
+                pc.text("""GitHub"""),
+                href="https://github.com/pritam-dey3/e2e_nlg_tf",
+            ),
+            align_items="flex-start",
         ),
         class_name="section",
         align_items="flex-start",

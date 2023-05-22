@@ -9,7 +9,8 @@ config = ResumeConfig(
     env=pc.Env.DEV,
     frontend_packages=[
         "@mantine/core",
-        "@mantine/hooks"
+        "@mantine/hooks",
+        "react-icons/fa",
     ]
 )
 

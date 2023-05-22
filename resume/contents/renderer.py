@@ -37,7 +37,7 @@ class PyneconeMarkdown(MarkdownRenderer):
             if len(token["children"]) == 1:
                 return self.render_children(token, state)
         return self.paragraph_tmpl.format(
-            children=self.render_children(token, state), props=""
+            children=self.render_children(token, state), props="align_items='flex-start', "
         )
 
     def heading(self, token: Dict[str, Any], state: BlockState) -> str:
