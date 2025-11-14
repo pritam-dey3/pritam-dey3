@@ -5,7 +5,11 @@
     I am a Data Scientist.<br/>
     I like to work with AI and build models that solve real problems.
   </p>
+  <p>
+    📝 <a href="https://pritamdey.in" target="_blank">pritamdey.in</a>
+  </p>
 </div>
+
 
 
 
