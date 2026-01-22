@@ -43,4 +43,10 @@
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=pritam-dey3&theme=transparent)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=pritam-dey3&theme=transparent)
+
+<table>
+  <tr>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pritam-dey3&theme=monokai"  display=block width=100% height=auto  alt="1" ></td>
+   </tr> 
+</table>
 </div>
