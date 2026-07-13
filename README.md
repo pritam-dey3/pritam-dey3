@@ -39,7 +39,7 @@
 <!--![](https://github-readme-stats.vercel.app/api?username=pritam-dey3&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>-->
 <!--![](https://github-readme-stats.vercel.app/api/top-langs/?username=pritam-dey3&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)-->
 
-[![GitHub Streak](https://nirzak-streak-stats.vercel.app?user=pritam-dey3&theme=transparent&hide_border=false)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=pritam-dey3&theme=transparent&currStreakLabel=1D7CFA&ring=2594EB&sideNums=2594EB&sideLabels=1D7CFA&currStreakNum=2594EB&fire=1D7CFA)](https://git.io/streak-stats)
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=pritam-dey3&theme=transparent)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=pritam-dey3&theme=transparent)
